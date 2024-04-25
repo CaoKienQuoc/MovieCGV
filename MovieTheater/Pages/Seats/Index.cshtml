@@ -1,0 +1,65 @@
+﻿@page
+@model MovieTheater.Pages.Seats.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Seat[0].SeatColumn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seat[0].SeatRow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seat[0].SeatStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seat[0].SeatType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Seat)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SeatColumn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SeatRow)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SeatStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SeatType)
+                </td>
+                <td>
+                    <!-- Nút Reset -->
+                    <form method="post" asp-page-handler="Reset">
+                        <input type="hidden" name="seatId" value="@item.SeatId" />
+                        <button type="submit" class="btn btn-primary">Reset</button>
+                    </form>
+
+                    <!-- Nút ChooseSeat -->
+                    <form method="post" asp-page-handler="ChooseSeat">
+                        <input type="hidden" name="seatId" value="@item.SeatId" />
+                        <button type="submit" class="btn btn-success">ChooseSeat</button>
+                    </form>
+                    <!-- Nút Detail -->
+                    <form asp-page="./Details" method="get">
+                        <input type="hidden" name="id" value="@item.SeatId" />
+                        <button type="submit">Details</button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

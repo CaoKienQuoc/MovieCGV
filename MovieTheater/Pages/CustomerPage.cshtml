@@ -1,0 +1,99 @@
+﻿@page "/Profile"
+@model MovieTheater.Pages.CustomerPageModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/cus.css" type="text/css" media="all" />
+</head>
+<body>
+    <form method="post">
+        <input type="hidden" asp-for="Account.AccountId" />
+        <section class="cardContainer">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-lg-6 mb-4 mb-lg-0">
+                        <div class="card mb-3">
+                            <div class="cardInfo">
+                                <div class="leftCard" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                         alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+                                    <h3>@Html.DisplayFor(model => model.Account.FullName)</h3>
+                                    <p>@Html.DisplayFor(model => model.Account.Username)</p>
+                                    <button type="submit">Save</button>
+                                    <i class="far fa-edit mb-5"></i>
+                                </div>
+                                <div class="rightCard">
+                                    <div class="information">
+                                        <div>
+                                            <h3>Information</h3>
+                                            <hr class="mt-0 mb-4">
+                                        </div>
+                                        <div class="insideInfo">
+                                            <div class="col-6 mb-3">
+                                                <h4>Email</h4>
+                                                <div class="form-group">
+                                                    <input asp-for="Account.Email" class="form-control" />
+                                                    <span asp-validation-for="Account.Email" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <h4>Phone</h4>
+                                                <div class="form-group">
+                                                    <input asp-for="Account.PhoneNumber" class="form-control" />
+                                                    <span asp-validation-for="Account.PhoneNumber" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div>
+                                            <hr class="mt-0 mb-4">
+                                        </div>
+                                        <div class="insideInfo">
+                                            <div class="col-6 mb-3">
+                                                <h4>Address</h4>
+                                                <div class="form-group">
+                                                    <input asp-for="Account.Address" class="form-control" />
+                                                    <span asp-validation-for="Account.Address" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <h4>Identity Card</h4>
+                                                <div class="form-group">
+                                                    <input asp-for="Account.IdentityCard" class="form-control" />
+                                                    <span asp-validation-for="Account.IdentityCard" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Ticket">
+                                        <div>
+                                            <hr class="mt-0 mb-4">
+                                        </div>
+                                        <div class="insideProject">
+                                            <div class="col-6 mb-3">
+                                                <h4>Birthday</h4>
+
+                                                <div class="form-group">
+                                                    <input asp-for="Account.DateOfBirth" class="form-control" />
+                                                    <span asp-validation-for="Account.DateOfBirth" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <h4>Password</h4>
+                                                <div class="form-group">
+                                                    <input asp-for="Account.Password" class="form-control" />
+                                                    <span asp-validation-for="Account.Password" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</body>

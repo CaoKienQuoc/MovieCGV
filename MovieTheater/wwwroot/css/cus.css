@@ -1,0 +1,52 @@
+﻿body {
+    background-color: darkgray;
+}
+
+.cardInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+    .cardInfo p {
+        padding-bottom: 30px;
+    }
+
+    .cardInfo button {
+        height: 40px;
+        width: 65px;
+        background-color: wheat;
+        border-radius: 16px;
+    }
+
+.leftCard {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.rightCard {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    border-radius: 0px 16px 16px 0px;
+    padding: 22px;
+}
+
+
+.information, .project {
+    display: flex;
+    flex-direction: column
+}
+
+.insideInfo, .insideProject {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

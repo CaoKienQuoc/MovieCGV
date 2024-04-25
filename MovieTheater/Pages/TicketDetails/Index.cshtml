@@ -1,0 +1,48 @@
+﻿@page
+@model MovieTheater.Pages.TicketDetails.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketDetail[0].Food)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketDetail[0].Movie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketDetail[0].Seat)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.TicketDetail) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Food.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.Actor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seat.SeatColumn)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.TicketDetailsId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.TicketDetailsId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.TicketDetailsId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

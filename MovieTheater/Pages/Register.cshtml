@@ -1,0 +1,120 @@
+﻿@page
+@model MovieTheater.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_RegisterLayout";
+}
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["message"]
+    </div>
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+
+    <!-- Other meta tags can remain unchanged -->
+    <!-- Google Tag Manager and other scripts remain unchanged -->
+    <!-- Link the style tags to the CSS files -->
+    <!-- Make sure to keep the links to CSS files unchanged -->
+</head>
+<body class="d-flex align-items-center bg-auth border-top border-top-2 border-danger">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 offset-xl-1 order-md-2 mb-5 mb-md-0">
+                <!-- Image -->
+                <div class="text-center">
+                    <img src="https://cdn.moveek.com/bundles/ornweb/img/mascot.png" alt="Moveek" class="img-fluid mt-4">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-5 order-md-1 my-5">
+                <!-- Heading -->
+                <h1 class="display-4 text-center mb-3 font-weight-bold">
+                    Register
+                </h1>
+
+                <!-- Registration form -->
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Account.Address">Address</label>
+                        <input asp-for="Account.Address" class="form-control" />
+                        <span asp-validation-for="Account.Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.DateOfBirth">Date of Birth</label>
+                        <input asp-for="Account.DateOfBirth" class="form-control" type="date" max="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <span asp-validation-for="Account.DateOfBirth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.Email">Email</label>
+                        <input asp-for="Account.Email" class="form-control" />
+                        <span asp-validation-for="Account.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.FullName">Full Name</label>
+                        <input asp-for="Account.FullName" class="form-control" />
+                        <span asp-validation-for="Account.FullName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.Gender">Gender</label>
+                        <select asp-for="Account.Gender" class="form-control">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span asp-validation-for="Account.Gender" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.IdentityCard">Identity Card</label>
+                        <input asp-for="Account.IdentityCard" class="form-control" />
+                        <span asp-validation-for="Account.IdentityCard" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.Image">Image</label>
+                        <input asp-for="Account.Image" class="form-control" />
+                        <span asp-validation-for="Account.Image" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.Password">Password</label>
+                        <input asp-for="Account.Password" class="form-control" />
+                        <span asp-validation-for="Account.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.PhoneNumber">Phone Number</label>
+                        <input asp-for="Account.PhoneNumber" class="form-control" />
+                        <span asp-validation-for="Account.PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Account.Username">Username</label>
+                        <input asp-for="Account.Username" class="form-control" />
+                        <span asp-validation-for="Account.Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-lg btn-block btn-dark mb-3">
+                            Create Account
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Link -->
+                <div class="text-center">
+                    <small class="text-muted">
+                        Do you have an account? <a href="/Login/">Login now</a>!
+                    </small>
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+    <!-- Scripts and script file paths remain unchanged -->
+
+</body>
+</html>

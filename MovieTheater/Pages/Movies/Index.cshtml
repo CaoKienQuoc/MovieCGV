@@ -1,0 +1,111 @@
+﻿@page
+@model MovieTheater.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    var userRole = HttpContext.Session.GetString("UserRole");
+}
+
+<h1>Index</h1>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .large-image {
+        max-width: 200px;
+        max-height: 400px;
+    }
+
+    .small-image {
+        max-width: 100px;
+        max-height: 200px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+@if (userRole == "1")
+{
+    <p>
+        <a asp-page="Create" class="btn btn-primary">Create New</a>
+    </p>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].MovieId)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].Actor)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].CinemaRoomId)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].Content)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].Director)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].Duration)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].FromDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].LargeImage)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].MovieNameEnglish)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].MovieNameVn)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].MovieProductionCompamy)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].SmallImage)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].Status)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].ToDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie[0].Version)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Movie)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.MovieId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Actor)</td>
+                <td>@Html.DisplayFor(modelItem => item.CinemaRoomId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Content)</td>
+                <td>@Html.DisplayFor(modelItem => item.Director)</td>
+                <td>@Html.DisplayFor(modelItem => item.Duration)</td>
+                <td>@Html.DisplayFor(modelItem => item.FromDate)</td>
+                <td><img src="@item.LargeImage" class="large-image" alt="Large Image" /></td>
+                <td>@Html.DisplayFor(modelItem => item.MovieNameEnglish)</td>
+                <td>@Html.DisplayFor(modelItem => item.MovieNameVn)</td>
+                <td>@Html.DisplayFor(modelItem => item.MovieProductionCompamy)</td>
+                <td><img src="@item.SmallImage" class="small-image" alt="Small Image" /></td>
+                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                <td>@Html.DisplayFor(modelItem => item.ToDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Version)</td>
+                <td>
+                    @if (userRole == "1")
+                    {
+                        <a asp-page="./Edit" asp-route-id="@item.MovieId" class="btn btn-primary btn-sm">Edit</a>
+                        <a asp-page="./Details" asp-route-id="@item.MovieId" class="btn btn-info btn-sm">Details</a>
+                        <a asp-page="./Delete" asp-route-id="@item.MovieId" class="btn btn-danger btn-sm">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

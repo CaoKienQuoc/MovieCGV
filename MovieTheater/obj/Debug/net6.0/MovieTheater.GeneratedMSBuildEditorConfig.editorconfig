@@ -1,0 +1,184 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MovieTheater
+build_property.RootNamespace = MovieTheater
+build_property.ProjectDir = C:\D_Tools\FPT-Learn\HK6_Block3W\PRN221\ProjectTeam\MovieTheaterCGV\MovieTheater\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\D_Tools\FPT-Learn\HK6_Block3W\PRN221\ProjectTeam\MovieTheaterCGV\MovieTheater
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Accounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Accounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Accounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Accounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Accounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/CustomerPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Foods/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Foods/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Foods/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Foods/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Foods/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9vZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Movies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Movies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Movies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Movies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Seats/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Seats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_RegisterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9SZWdpc3RlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/TicketDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0RGV0YWlsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/TicketDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0RGV0YWlsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Tickets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Tickets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/UserPage/MovieDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcTW92aWVEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/UserPage/UserPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcVXNlclBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/UserPage/UserTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcVXNlclRpY2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/D_Tools/FPT-Learn/HK6_Block3W/PRN221/ProjectTeam/MovieTheaterCGV/MovieTheater/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o8nxj584dc

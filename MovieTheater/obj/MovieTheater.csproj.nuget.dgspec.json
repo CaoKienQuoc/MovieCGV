@@ -1,0 +1,395 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheater\\MovieTheater.csproj": {}
+  },
+  "projects": {
+    "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\BusinessObject\\BusinessObject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\BusinessObject\\BusinessObject.csproj",
+        "projectName": "BusinessObject",
+        "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\caoki\\.nuget\\packages\\",
+        "outputPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\BusinessObject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterDAO\\MovieTheaterDAO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterDAO\\MovieTheaterDAO.csproj",
+        "projectName": "MovieTheaterDAO",
+        "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterDAO\\MovieTheaterDAO.csproj",
+        "packagesPath": "C:\\Users\\caoki\\.nuget\\packages\\",
+        "outputPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterDAO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\BusinessObject\\BusinessObject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterRepo\\MovieTheaterRepo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterRepo\\MovieTheaterRepo.csproj",
+        "projectName": "MovieTheaterRepo",
+        "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterRepo\\MovieTheaterRepo.csproj",
+        "packagesPath": "C:\\Users\\caoki\\.nuget\\packages\\",
+        "outputPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterRepo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterDAO\\MovieTheaterDAO.csproj": {
+                "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterDAO\\MovieTheaterDAO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterService\\MovieTheaterService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterService\\MovieTheaterService.csproj",
+        "projectName": "MovieTheaterService",
+        "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterService\\MovieTheaterService.csproj",
+        "packagesPath": "C:\\Users\\caoki\\.nuget\\packages\\",
+        "outputPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterRepo\\MovieTheaterRepo.csproj": {
+                "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterRepo\\MovieTheaterRepo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.CodeAnalysis.Workspaces.Common": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheater\\MovieTheater.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheater\\MovieTheater.csproj",
+        "projectName": "MovieTheater",
+        "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheater\\MovieTheater.csproj",
+        "packagesPath": "C:\\Users\\caoki\\.nuget\\packages\\",
+        "outputPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheater\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterService\\MovieTheaterService.csproj": {
+                "projectPath": "C:\\D_Tools\\FPT-Learn\\HK6_Block3W\\PRN221\\ProjectTeam\\MovieTheaterCGV\\MovieTheaterService\\MovieTheaterService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.29, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

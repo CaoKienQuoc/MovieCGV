@@ -1,0 +1,149 @@
+﻿@page
+@model MovieTheater.Pages.Movies.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    var message = TempData["message"];
+}
+
+<h1>Create</h1>
+
+<h4>Movie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Movie.Actor" class="control-label"></label>
+                <input asp-for="Movie.Actor" class="form-control" />
+                <span asp-validation-for="Movie.Actor" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.CinemaRoomId" class="control-label"></label>
+                <input asp-for="Movie.CinemaRoomId" class="form-control" type="number" min="0" />
+                <span asp-validation-for="Movie.CinemaRoomId" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="Movie.Content" class="control-label"></label>
+                <input asp-for="Movie.Content" class="form-control" />
+                <span asp-validation-for="Movie.Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Director" class="control-label"></label>
+                <input asp-for="Movie.Director" class="form-control" />
+                <span asp-validation-for="Movie.Director" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Duration" class="control-label"></label>
+                <input asp-for="Movie.Duration" class="form-control" type="number" min="0" />
+                <span asp-validation-for="Movie.Duration" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.FromDate" class="control-label"></label>
+                <input asp-for="Movie.FromDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="Movie.FromDate" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.LargeImage" class="control-label"></label>
+                <input asp-for="Movie.LargeImage" type="file" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.MovieNameEnglish" class="control-label"></label>
+                <input asp-for="Movie.MovieNameEnglish" class="form-control" />
+                <span asp-validation-for="Movie.MovieNameEnglish" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.MovieNameVn" class="control-label"></label>
+                <input asp-for="Movie.MovieNameVn" class="form-control" />
+                <span asp-validation-for="Movie.MovieNameVn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.MovieProductionCompamy" class="control-label"></label>
+                <input asp-for="Movie.MovieProductionCompamy" class="form-control" />
+                <span asp-validation-for="Movie.MovieProductionCompamy" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.SmallImage" class="control-label"></label>
+                <input asp-for="Movie.SmallImage" type="file" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Status" class="control-label"></label>
+                <input asp-for="Movie.Status" class="form-control" type="number" min="0" />
+                <span asp-validation-for="Movie.Status" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.ToDate" class="control-label"></label>
+                <input asp-for="Movie.ToDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="Movie.ToDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Version" class="control-label"></label>
+                <input asp-for="Movie.Version" class="form-control" />
+                <span asp-validation-for="Movie.Version" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var form = document.querySelector('form');
+
+            form.addEventListener("submit", function (event) {
+                var movieStatus = document.getElementById("Movie_Status").value;
+                var fromDate = new Date(document.getElementById("Movie_FromDate").value);
+                var toDate = new Date(document.getElementById("Movie_ToDate").value);
+                var currentDate = new Date();
+
+                if (movieStatus !== "0" && movieStatus !== "1") {
+                    alert("Movie status must be 0 or 1");
+                    event.preventDefault();
+                }
+
+                if (fromDate >= toDate) {
+                    alert("From date must be earlier than to date");
+                    event.preventDefault();
+                }
+
+                if (fromDate < currentDate) {
+                    alert("From date must be after current date");
+                    event.preventDefault();
+                }
+            });
+
+            var fromDateInput = document.getElementById("Movie_FromDate");
+            var toDateInput = document.getElementById("Movie_ToDate");
+            var currentDate = new Date();
+
+            fromDateInput.min = currentDate.toISOString().split('T')[0];
+            toDateInput.min = currentDate.toISOString().split('T')[0];
+            fromDateInput.addEventListener("change", function () {
+                var fromDateValue = new Date(this.value);
+                toDateInput.min = fromDateValue.toISOString().split('T')[0];
+                toDateInput.value = fromDateValue.toISOString().split('T')[0];
+            });
+        });
+    </script>
+}
+<div>
+    @message
+</div>

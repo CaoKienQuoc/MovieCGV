@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MovieTheater</title>
+
+    <meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="profile" href="#">
+
+    <!--Google Font-->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+	<!-- Mobile specific meta -->
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone-no">
+
+	<!-- CSS files -->
+	<link rel="stylesheet" href="~/user-asset/css/plugins.css" asp-append-version="true" >
+	<link rel="stylesheet" href="~/user-asset/css/style.css" asp-append-version="true">
+     <link rel="stylesheet" href="~/seat/style.css" asp-append-version="true" />
+
+</head>
+@{
+    var alphabet = "ABCDEF";
+
+}
+
+
+<body>
+
+
+    <div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>Choose your seat</h3>
+        <div class="body-seat">
+             <div class="movie-container">
+      <label>Pick a food of your choice:</label>
+      <select id="movie">
+        <option value="10">Bắp ngọt </option>
+        <option value="12">Nước tắc</option>
+        <option value="8">Coca cola</option>
+        <option value="9">Bắp mặn</option>
+        <option value="8">Bắp phô mai</option>
+        <option value="9">Bắp mix vị</option>
+      </select>
+    </div>
+        <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+    @if (Model.Seat != null)
+{
+        <div class="seat-container">
+      <div class="screen"></div>
+
+@foreach (var letter in alphabet)
+{
+    <div class="row" style="
+    display: flex;
+    margin-left: 108px;"
+>
+        @for (int i = 1; i <= 8; i++)
+        {
+            var seat = Model.GetSeatByRowAnddCoulm(letter.ToString(), i);
+            <div class="seat @(seat != null && seat.SeatStatus == 1 ? "occupied" : (seat != null && seat.SeatStatus == 3 ? "selected" : ""))" seatid="@seat?.SeatId" ></div>
+
+        }
+    </div>
+}
+    </div>
+    }
+else
+{
+    <p>No seat data available.</p>
+}
+    </div>
+
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of $<span
+        id="total"
+        >0</span
+      >
+    </p>
+    @if (Model.AccountId != null) {
+    <div class="btn-confirm" accountid="@Model.AccountId"><a href="#" id="confirmBtn" style="color: white;">Confirm purchase</a></div>
+    }
+    </div>
+</div>
+<!--end of login form popup-->
+<!--signup form popup-->
+<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="#">
+            <div class="row">
+                 <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+           
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+             <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+             <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+           <div class="row">
+             <button type="submit">sign up</button>
+           </div>
+        </form>
+    </div>
+</div>
+
+    <partial name="_Header"/>
+
+
+    <div id="preloader">
+    <img class="logo" src="images/logo1.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+   @RenderBody()
+   <partial name="_Footer"/>
+</body>
+
+
+
+<!-- Modal -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/user-asset/js/jquery.js"></script>
+    <script src="~/user-asset/js/plugins.js"></script>
+    <script src="~/user-asset/js/plugins2.js"></script>
+    <script src="~/user-asset/js/custom.js"></script>
+    <script src="~/seat/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</html>
